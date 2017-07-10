@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="3">
+                Girilen Cümle : 
+                <h:inputText id="cumle1" size="20" label="Boş geçme veya uygun uzunlukta değer gir.!" value="#{sonucManagedBean.virgulluSayi}">
+                    <f:validateDoubleRange minimum="55.77" maximum="99.97" />
+                </h:inputText>
+                <h:commandButton action="sonuc" value="Gönder"/>
+            </h:panelGrid>
+            <h:message for="cumle1" />
+        </h:form>
+    </h:body>
+</html>
+
